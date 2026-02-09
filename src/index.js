@@ -1,13 +1,14 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
-import { Home } from "./Home"
+//import { Home } from "./Home"
 import GlobalStyles from "./styles/GlobalStyles"
+import Routes from "./routes/routes"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
   <>
     <React.StrictMode>
-      <Home />
+      <Routes />
     </React.StrictMode>,
     <GlobalStyles />
   </>

@@ -1,13 +1,12 @@
 import React from "react"
-import { Conteiner } from "./styles"
 import { Header } from "../Components/header"
+import { Conteiner } from "./styles"
 
-export function Home() {
+export function Cultos() {
   return (
     <Conteiner>
       <Header />
-      <h1>Igreja Remanescentes do Grande Eu Sou</h1>
-      <p></p>
+      <h1>Cultos</h1>
     </Conteiner>
   )
 }

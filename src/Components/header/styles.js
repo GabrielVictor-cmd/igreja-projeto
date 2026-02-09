@@ -1,3 +1,4 @@
+//import { Link } from "react-router-dom"
 import styled from "styled-components"
 
 export const Container = styled.div`
@@ -43,4 +44,12 @@ export const P = styled.p`
     font-weight: 500;
     font-style: normal;
     line-height: normal;
+`
+
+export const PageLink = styled.a`
+    text-underline-position: ${props => props.isActive ? "under" : "none"};
+    color: ${props => props.isActive ? "#ffffff" : "#ffffff"};
+    line-height: 19px;
+    font-size: 16px;
+    font-weight: ${props => props.isActive ? "bold" : "normal"};
 `
