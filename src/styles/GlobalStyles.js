@@ -8,8 +8,12 @@ export default createGlobalStyle`
         box-sizing: border-box;
         font-family: "Roboto", sans-serif;
         outline: none;
-        overflow-x: hidden;
-        
+    }
+    
+    html, body, #root {
+        height: 100%;
+        width: 100%;
+        overflow-y: hidden;
     }
 
 `

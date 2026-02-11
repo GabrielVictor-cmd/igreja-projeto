@@ -8,9 +8,9 @@ export function OndeEstamos() {
     <Conteiner>
       <Header />
       <h1>Onde estamos?</h1>
-      <MapaIgreja>
-        
-      </MapaIgreja>
+      
+      <MapaIgreja />
+
     </Conteiner>
   )
 }
