@@ -6,7 +6,7 @@ export function Header() {
   const navigate = useNavigate()
   const location = useLocation()
   const isHome = location.pathname === "/"
-  const isEventos = location.pathname === "/eventos"
+  //const isEventos = location.pathname === "/eventos"
   const isCultos = location.pathname === "/cultos"
   const isDizOfer = location.pathname === "/dizimos-ofertas"
   const isOndeEsta = location.pathname === "/onde-estamos"
@@ -19,7 +19,7 @@ export function Header() {
 
       <Button onClick={() => navigate("/")}><PageLink isActive={isHome}>Home</PageLink> </Button>
 
-      <Button onClick={() => navigate("/eventos")}><PageLink isActive={isEventos}>Eventos</PageLink> </Button>
+      {/*<Button onClick={() => navigate("/eventos")}><PageLink isActive={isEventos}>Eventos</PageLink> </Button>*/}
 
       <Button onClick={() => navigate("/cultos")}><PageLink isActive={isCultos}>Cultos</PageLink> </Button>
 
