@@ -29,11 +29,11 @@ export function Home() {
           Mateus 11:28
         </A>
         ). Aqui, você não é apenas mais um — você é parte da família.
+      <Img>
+        <img src={require("../Assets/igreja-editado.jpg")} alt="Imagem da capa da igreja" />
+      </Img>
       </Resume>
 
-      <Img>
-        <img src={require("../Assets/igreja-editado.jpg")} />
-      </Img>
     </Conteiner>
   )
 }

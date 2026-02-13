@@ -13,3 +13,30 @@ export const Conteiner = styled.div`
   }
   
 `
+
+export const A = styled.a`
+  text-decoration: none;
+  color: #202020;
+`
+
+export const Resume = styled.p`
+  margin: 20px;
+  justify-content: center;
+  line-height: 25px;
+  font-size: 18px;
+`
+
+export const Img = styled.div`
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: auto;
+    width: 300px;
+    max-width: 100%;
+    border-radius: 3px;
+  }
+`
