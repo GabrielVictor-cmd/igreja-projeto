@@ -1,6 +1,7 @@
 import React from "react"
 import { Header } from "../Components/header"
-import { Conteiner, CardItemsCulto, Div } from "./styles"
+import { Conteiner, Div } from "./styles"
+import { CultosCarrosel } from "../Components/cultosCarrosel"
 
 export function Cultos() {
   const cultos = [
@@ -24,18 +25,9 @@ export function Cultos() {
       <h1>Programação semanal de Cultos</h1>
       <Div>
 
-      <ul>
-        {cultos.map((cultos) => (
-          <CardItemsCulto>
+        <CultosCarrosel />
 
-            <li key={cultos.id}>
-              <p>{cultos.cultoNome}</p> <p>{cultos.horario}</p>
-            </li>
-            
-          </CardItemsCulto>
-        ))}
-      </ul>
-        </Div>
+      </Div>
     </Conteiner>
   )
 }
