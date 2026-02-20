@@ -51,6 +51,10 @@ class CultsControler {
     return response.json(cult)
   }
 
+  async update(req, res) {
+    return res.json({ message: "Update funcionando!" });
+  }
+
 }
 
 export default new CultsControler()

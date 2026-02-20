@@ -25,7 +25,7 @@ routes.use(authMiddleware) // Cuidado, Tudo abaixo será pedido o token nas rota
 
 routes.post("/cults", upload.single("file"), CultsControler.store)
 routes.get("/cults", authMiddleware, CultsControler.index)
-routes.put("/cults/:id", upload.single("file"), CultsControler.update)
+routes.put("/cults/:id", CultsControler.update)
 
 
 export default routes

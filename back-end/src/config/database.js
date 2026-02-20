@@ -2,8 +2,8 @@ export default {
   dialect: "postgres",
   host: "localhost",
   username: "postgres",
-  password: "postgres",
-  database: "igreja",
+  password: "docker",
+  database: "postgres",
   define: {
     timestamps: true,
     underscored: true,

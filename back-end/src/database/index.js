@@ -1,35 +1,23 @@
-import { Sequelize } from "sequelize"
-import Culto from "../app/models/Culto.js"
+import { Sequelize } from "sequelize";
+import Culto from "../app/models/Culto.js";
+import User from "../app/models/User.js";
+import configDatabase from "../config/database.js";
 
-import configDatabase from "../config/database.js"
-import mongoose from "mongoose"
-
-const models = [Culto]
+const models = [Culto, User];
 
 class Database {
   constructor() {
-    this.init()
-    this.mongo()
+    this.init();
   }
 
   init() {
-    this.connection = new Sequelize(configDatabase)
+    this.connection = new Sequelize(configDatabase);
     models
       .map((model) => model.init(this.connection))
       .map(
-        (model) => model.associate && model.associate(this.connection.models)
-      )
-  }
-
-  mongo() {
-    this.mongoConnection = mongoose.connect(
-      "mongodb://localhost:27017/igreja",
-      {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      }
-    )
+        (model) => model.associate && model.associate(this.connection.models),
+      );
   }
 }
 
-export default new Database()
+export default new Database();

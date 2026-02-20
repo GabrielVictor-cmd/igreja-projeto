@@ -21,7 +21,7 @@ class Culto extends Model {
     return this
   }
   static associate(models) {
-    this.belongsTo(models.Category, { foreignKey: "culto_id", as: "culto" })
+    //this.belongsTo(models.Category, { foreignKey: "culto_id", as: "culto" })
   }
 }
 
