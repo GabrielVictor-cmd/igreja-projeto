@@ -1,7 +1,7 @@
 import React from "react"
 import { Navigate, Outlet } from "react-router-dom"
 import PropTypes from "prop-types"
-import { Header } from "../components/Header"
+import { Header } from "../Components/header"
 
 const PrivateRoutesWrapper = ({ children, isAdmin, ...rest}) => {
   const user = localStorage.getItem("@igreja:userData")

@@ -46,16 +46,3 @@ export const Conteiner = styled.div`
     }
   }
 `
-
-export const OffersItems = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  p {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 120%;
-    color: #424242;
-  }
-`

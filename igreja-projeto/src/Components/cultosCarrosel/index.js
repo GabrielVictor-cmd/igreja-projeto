@@ -1,6 +1,6 @@
 import React from "react"
 import Carousel from "react-elastic-carousel"
-import { Conteiner, OffersItems } from "./styles"
+import { Conteiner } from "./styles"
 import { Cards } from "../Cards"
 
 export function CultosCarrosel() {
