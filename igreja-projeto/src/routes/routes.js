@@ -4,6 +4,7 @@ import { Home } from "../Home"
 import { Cultos } from "../Cultos"
 import { DizimosOfertas } from "../Dizimos-Ofertas"
 import { OndeEstamos } from "../Onde-Estamos"
+import Register from "../Cadastro"
 import Login from "../Login"
 import PrivateRoutesWrapper from "./private-Routes"
 
@@ -16,7 +17,8 @@ function routes(){
             <Routes>
                 <Route path="/login" element={<Login/>} />
 
-                {/*<Route path="/cadastro" element={<Register/>} /> */}
+                <Route path="/cadastro" element={<Register/>} />
+                
                 <Route path="/" element={<PrivateRoutesWrapper><Home/></PrivateRoutesWrapper>} />
 
                 <Route path="/home" element={<PrivateRoutesWrapper><Home/></PrivateRoutesWrapper>} />
